@@ -1,7 +1,8 @@
 
-
 import { useState } from 'react';
 import './Auth.css';
+
+const BASE_URL = 'https://skillsbridge-j1nn.onrender.com';
 
 function Auth({ onBack, onLoginSuccess }) {
   const [isLogin, setIsLogin] = useState(true);
@@ -27,8 +28,8 @@ function Auth({ onBack, onLoginSuccess }) {
       setLoading(true);
 
       const endpoint = isLogin
-        ? 'http://localhost:5000/api/auth/login'
-        : 'http://localhost:5000/api/auth/register';
+        ? `${BASE_URL}/api/auth/login`
+        : `${BASE_URL}/api/auth/register`;
 
       const response = await fetch(endpoint, {
         method: 'POST',
@@ -72,7 +73,6 @@ function Auth({ onBack, onLoginSuccess }) {
 
   return (
     <div className="auth-container">
-
       <div className="auth-box">
 
         <button
@@ -173,7 +173,6 @@ function Auth({ onBack, onLoginSuccess }) {
         </p>
 
       </div>
-
     </div>
   );
 }

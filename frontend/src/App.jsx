@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 import Auth from './Auth';
 import './App.css';
 
-const API = 'http://localhost:5000/api/auth';
-const PROJECTS_API = 'http://localhost:5000/api/projects';
+const BASE_URL = 'https://skillsbridge-j1nn.onrender.com';
+
+const API = `${BASE_URL}/api/auth`;
+const PROJECTS_API = `${BASE_URL}/api/projects`;
 
 function App() {
   const [showAuth, setShowAuth] = useState(false);
