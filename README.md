@@ -127,3 +127,21 @@ B.Tech – Computer Science and Engineering
 ## 📄 License
 
 This project is developed for educational and learning purposes.
+
+
+## 📸 Project Screenshots
+
+### 1. Landing Page
+![Landing Page](screenshots/landing-page.png)
+
+### 2. Student Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 3. My Skills
+![My Skills](screenshots/my-skills.png)
+
+### 4. Student Connections
+![Connections](screenshots/connections.png)
+
+### 5. My Projects
+![Projects](screenshots/projects.png)
